@@ -1,151 +1,30 @@
 <!DOCTYPE html>
-<html lang="en" >
-
+<html lang="ru">
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+ <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111739876-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-111739876-1');
 </script>
-  <meta charset="UTF-8">
-  <title>ilyashevich.ru</title>
-      <style>      
-      @import "https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300";
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background: #000000;
-  overflow-x: hidden;
-}
-
-.container {
-  perspective: 800px;
-  /* Styling */
-  color: #030303;
-  font-family: 'Open Sans', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  /* Center it */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.card {
-  /* Styling */
-  width: 700px;
-  height: 400px;
-  background-image: url("back.jpg");
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  /* Card flipping effects */
-  transform-style: preserve-3d;
-  transition: 0.6s;
-}
-
-.side {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  /* Fix Chrome rendering bug */
-  transform: rotate(0deg) translateZ(1px);
-}
-
-/* Flip the card on hover */
-.container:hover .card,
-.back {
-  transform: rotateY(-180deg) translateZ(1px);
-}
-
-/* Front styling */
-.front {
-  /* Center the name + outline (almost) */
-  line-height: 390px;
-  /* Height - some (because visual center is a little higher than actual center) */
-  text-align: center;
-}
-
-.logo {
-  display: inline-block;
-  padding: 15px 40px;
-  text-transform: uppercase;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.4em;
-  font-weight: bold;
-  line-height: 32px;
-  letter-spacing: 8px;
-}
-
-/* Back styling */
-.back {
-  background-image: url("back.jpg");
-  padding: 30px;
-}
-
-.name {
-  color: #000000;
-  margin-bottom: 0;
-}
-
-p {
-  margin: 0.8em 0;
-}
-
-.info {
-  text-transform: none;
-  position: absolute;
-  bottom: 30px;
-  left: 30px;
-  color: #000000;
-}
-
-.property {
-  color: #000000;
-}
-
-/* Make semi-responsive */
-@media (max-width: 700px) {
-  .card {
-    transform: scale(0.5);
-  }
-
-  .container:hover .card {
-    transform: scale(0.5) rotateY(-180deg) translateZ(1px);
-  }
-}
-
-    </style>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-
+<link rel="stylesheet" href="mini-default.css">  
+<title>ilyashevich.ru</title>
+<meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-
 <body>
-
-  <div class="container">
-  <div class="card">
-    
-    <div class="front side">
-      <h1 class="logo">Сергей Ильяшевич</h1>
+<div class="container">
+  <div class="row cols-sm-12 cols-md-10">
+    <div class="col-md-offset-1">
+	<br />
+	  <p><span class="icon-user"></span> РР»СЊСЏС€РµРІРёС‡ РЎРµСЂРіРµР№</p>
+      <p><span class="icon-phone"></span> +7 (920) 670-9901</p>
+      <p><span class="icon-mail"></span> info@ilyashevich.ru</p>
+      <br />
     </div>
-    
-    <div class="back side">
-      <h3 class="name">Сергей Ильяшевич</h3>
-       <div class="info">
-        <div>Со мной можно связаться:</div>
-         <p><span class="property">по телефону: </span>+7 (920) 670-9901</p>
-         <p><span class="property">электронной почте: </span><a href="mailto:info@ilyashevich.ru">info@ilyashevich.ru</a></p>
-        </div>
-       </div>
-    </div>
+  </div>
 </div>
-    <script  src="js/index.js"></script>
 </body>
 </html>
